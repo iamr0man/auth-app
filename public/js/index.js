@@ -7,7 +7,7 @@ function validateEmail(login){
 }
 
 function validatePass(pass){
-    return /^(?=.*[a-zA-Z])(?=.*[!@#$%^&*])/.test(pass);
+    return /^(?=.*[a-zA-Z])(?=.*[!@#$%^&*])/.test(pass) && pass.length >= 8;
 }
 
 pass.addEventListener('blur', function(){
