@@ -1,0 +1,13 @@
+html
+    include ../partials/head
+
+    body(class="bg-secondary h-100")
+        div(class="container w-100 pt-3")
+            div(class="form-group w-70")
+                input(type="text" class="form-control" placeholder="Login..." id="inputLogin")
+            div(class="form-group w-70" id="tasksContainer")
+                input(type="text" class="form-control task" id="inputPass" placeholder="Password...")
+            div(class="form-group text-center")
+                button(type="button" class="btn btn-dark mr-3" id="ok-btn" disabled) Ok
+        include ../partials/footer    
+            
